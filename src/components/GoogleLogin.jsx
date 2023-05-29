@@ -7,7 +7,7 @@ import { googleLogin } from '../redux/actions/auth'
 
 const GoogleLogin = ({ buttonText }) => {
     const dispatch = useDispatch()
-    const navigate = useNavigate
+    const navigate = useNavigate()
     
     const login = useGoogleLogin({
         onSuccess: (tokenResponse) => {
